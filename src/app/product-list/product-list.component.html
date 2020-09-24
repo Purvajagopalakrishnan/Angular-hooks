@@ -1,0 +1,13 @@
+<product *ngFor="let prod of products" [product]="prod">
+    <span class="productSetup">{{ prod.productSetup }}?</span>
+    <h1 class="productCategory">{{ prod.productCategory }}</h1>
+</product>
+  
+<button type="button"
+        class="btn btn-success"
+        (click)="addProduct()">Add Product
+</button>
+<button type="button"
+    class="btn btn-danger"
+    (click)="deleteProduct()">Clear Products
+</button>
